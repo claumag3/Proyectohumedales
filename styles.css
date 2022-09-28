@@ -2,6 +2,7 @@ body{
     background-color: #51591b;
 }
 header{
+    position: fixed;
     background-color: #dc5000;
 }
 .menu{
