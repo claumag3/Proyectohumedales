@@ -1,0 +1,49 @@
+body{
+    background-color: #51591b;
+}
+header{
+    background-color: #dc5000;
+}
+.menu{
+     color: aliceblue;
+}
+.menu ol {
+    background-color: #ffbd6d;
+    font-size: 1.2rem;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menuItem {
+    display: inline-block;
+    padding-right: 20px;
+ }
+.inicio {
+    text-align: right;
+}
+.tituloPagina{
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #ffbd6d;
+    text-align: center ;
+}
+.inicio{
+    display: flex;
+}
+
+.item1{
+    /*background-color: beige;*/
+}
+.item2{
+    width: 40%;
+    padding: 10px;
+    color: white;
+}
+.citas{
+    color: white;
+}
+#descripcion{
+    font-family: Arial, Helvetica, sans-serif;
+    font: Arial;
+    font-size: 2rem;
+}
