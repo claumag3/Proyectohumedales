@@ -1,9 +1,14 @@
 body{
     background-color: #51591b;
 }
+/*No voy a tocar mucho el header por ahora, pero que sea fixed es un error. Le puse maximo width sin border o margin para ver si ajustaba a la pagina.
+Le puse flexbox tambien.*/
 header{
-    position: fixed;
+    position: relative;
     background-color: #dc5000;
+    width: 100%;
+    margin: -2% 0 1% -0.5%;
+    padding: 0 1% 0 0;
 }
 .menu{
      color: aliceblue;
@@ -47,4 +52,22 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     font: Arial;
     font-size: 2rem;
+}
+
+/*Esto va a ser para las noticias, lo voy a hacer de 0 y luego veo si coincide con algo de lo de arriba.*/
+.carta{
+    border: solid grey 1px;
+}
+.contenedor-grid{
+    display: grid;
+    height: 60vh;
+}
+.item-superior-grid{
+    grid-column: 1  /  6;
+}
+.item-principal-grid{
+    grid-column: 1 /  5; 
+}
+.item-secundario-grid{
+    grid-column: 5 /  6;
 }
