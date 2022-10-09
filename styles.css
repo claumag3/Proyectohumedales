@@ -2,9 +2,14 @@ body{
     background-color: #51591b;
     /* border: 5px solid rgb(95, 95, 157); */
 }
+/*No voy a tocar mucho el header por ahora, pero que sea fixed es un error. Le puse maximo width sin border o margin para ver si ajustaba a la pagina.
+Le puse flexbox tambien.*/
 header{
-    /* position: fixed; */
+    position: relative;
     background-color: #dc5000;
+    width: 100%;
+    margin: -2% 0 1% -0.5%;
+    padding: 0 1% 0 0;
 }
 .inicio{
     /* width: 100vw; */
@@ -28,8 +33,10 @@ header{
 .menuItem {
     display: inline-block;
     padding-right: 20px;
- }
-
+}
+.inicio {
+    text-align: right;
+}
 .tituloPagina{
     font-weight: bold;
     font-size: 2.5rem;
@@ -74,4 +81,37 @@ header{
     width: 40%;
     /* padding: 10px; */
     color: white;
+}
+
+/*Esto va a ser para las noticias, lo voy a hacer de 0 y luego veo si coincide con algo de lo de arriba.*/
+.carta{
+    border: solid grey 1px;
+}
+.contenedor-grid{
+    display: grid;
+    height: 60vh;
+    grid-template-columns: 7fr 2fr;
+}
+.contenedor-grid div{
+    margin: 0 0 0 0;
+}
+.contenedor-grid main{
+    display: grid;
+    height:min-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 3% 3% 0 3%;
+    grid-row-gap: 5%;
+}
+.item-superior-grid{
+    grid-column: 1  /  3;
+}
+.item-principal-grid{
+    grid-column: 1; 
+}
+.item-secundario-grid{
+    grid-column: 2;
+}
+
+.item-cartas-grid{
 }
