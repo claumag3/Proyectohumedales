@@ -82,7 +82,16 @@ header{
 }
 .item-secundario-grid{
     grid-column: 2;
+    border-left: 2px rgba(128, 128, 128, 0.1) dashed;
 }
 
-.item-cartas-grid{
+.item-cartas-grid > a{
+    font-family: Helvetica, Arial, sans-serif;
+    font: 16px bold;
+    color: antiquewhite;
+}
+
+.imagenes-noticias{
+    width: 304px;
+    height: auto;
 }
