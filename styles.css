@@ -1,5 +1,6 @@
 body{
     background-color: #51591b;
+    /* border: 5px solid rgb(95, 95, 157); */
 }
 /*No voy a tocar mucho el header por ahora, pero que sea fixed es un error. Le puse maximo width sin border o margin para ver si ajustaba a la pagina.
 Le puse flexbox tambien.*/
@@ -10,6 +11,15 @@ header{
     margin: -2% 0 1% -0.5%;
     padding: 0 1% 0 0;
 }
+.inicio{
+    /* width: 100vw; */
+    /* border: 5px solid darkblue; */
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex
+
+}
+
 .menu{
      color: aliceblue;
 }
@@ -33,25 +43,44 @@ header{
     color: #ffbd6d;
     text-align: center ;
 }
-.inicio{
-    display: flex;
-}
 
 .item1{
-    /*background-color: beige;*/
+    /* max-width: 70%; */
+    /* border: 5px solid green; */
+    width: 70%;
+
+    /* width: 70%; */
+    /* background-color: beige; */
 }
 .item2{
-    width: 40%;
+    /* border: 5px solid rgb(244, 236, 10); */
+    width: 30%;
     padding: 10px;
     color: white;
 }
 .citas{
     color: white;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 1.2rem;
 }
 #descripcion{
     font-family: Arial, Helvetica, sans-serif;
-    font: Arial;
-    font-size: 2rem;
+    font: Helvetica;
+    font-size: 1.5rem;
+    }
+.item1Humedal{
+    width: 60%;
+    text-align: center;
+    size-adjust: 80%;
+    /* height: "100%";
+    width :"100%"; */
+}
+.item2Humedal{
+    /* border: 5px solid rgb(244, 236, 10); */
+    width: 40%;
+    /* padding: 10px; */
+    color: white;
 }
 
 /*Esto va a ser para las noticias, lo voy a hacer de 0 y luego veo si coincide con algo de lo de arriba.*/
