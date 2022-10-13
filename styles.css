@@ -1,3 +1,4 @@
+
 body{
     background-color: #51591b;
     /* border: 5px solid rgb(95, 95, 157); */
@@ -12,14 +13,42 @@ header{
     padding: 0 1% 0 0;
 }
 .inicio{
-    /* width: 100vw; */
-    /* border: 5px solid darkblue; */
-    display: -ms-flex;
-    display: -webkit-flex;
-    display: flex
-
+    /* display: -webkit-flex;
+    display: -ms-flex; */
+    /* display: -webkit-flex; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    }
+@media screen and (max-width: 420px) {
+    .item1 {width: 100%;}
+    .inicio{flex-wrap: wrap;}
+    .item1Humedal{width: 100%;}
+  }
+ 
+@media screen and (min-width: 500px) {
+    .item1 {width: 70%;}
+    .item2 {width: 30%;}
+    .item1Humedal{width: 60%;}
+    .item2Humedal{width: 40%;}
+    .inicio{flex-wrap: nowrap;}   
+  }
+  
+.item1Humedal{
+    /* width: 60%; */
+    text-align: center;
+    /* size-adjust: 80%; */
+  }
+.item2Humedal{
+    /* width: 40%; */
+    text-align: left;
+    padding: 10px;
+    color: white;
 }
-
+.item2{
+    /* width: 30%; */
+    padding: 10px;
+    color: white;
+}
 .menu{
      color: aliceblue;
 }
@@ -44,44 +73,44 @@ header{
     text-align: center ;
 }
 
-.item1{
-    /* max-width: 70%; */
-    /* border: 5px solid green; */
-    width: 70%;
 
-    /* width: 70%; */
-    /* background-color: beige; */
-}
-.item2{
-    /* border: 5px solid rgb(244, 236, 10); */
-    width: 30%;
-    padding: 10px;
-    color: white;
-}
+
 .citas{
     color: white;
     text-align: left;
     padding-left: 10px;
     font-size: 1.2rem;
 }
+
 #descripcion{
     font-family: Arial, Helvetica, sans-serif;
-    font: Helvetica;
+    font-stretch: extra-expanded;
+    line-height: 140%;
+    /* font: Helvetica; */
     font-size: 1.5rem;
     }
-.item1Humedal{
+h2{
+        color:#ffbd6d
+    }
+cite h2{
+    color:white
+}
+.parrafoHumedal{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .item1Humedal{
     width: 60%;
     text-align: center;
     size-adjust: 80%;
-    /* height: "100%";
-    width :"100%"; */
-}
+  }
 .item2Humedal{
-    /* border: 5px solid rgb(244, 236, 10); */
     width: 40%;
+    text-align: left;
     /* padding: 10px; */
-    color: white;
-}
+    /* color: white; */
+/* } */
 
 /*Esto va a ser para las noticias, lo voy a hacer de 0 y luego veo si coincide con algo de lo de arriba.*/
 .carta{
