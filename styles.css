@@ -120,3 +120,37 @@ header{
     width: 304px;
     height: auto;
 }
+
+.formulario{
+    color: azure;
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #7e1a02;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+input, textarea {
+    background-color: #ffbd6d;
+    border: 1px solid #ffbd6d;
+    color: #000000; 
+  }
