@@ -1,24 +1,22 @@
 
 body{
     background-color: #51591b;
-    /* border: 5px solid rgb(95, 95, 157); */
-}
-/*No voy a tocar mucho el header por ahora, pero que sea fixed es un error. Le puse maximo width sin border o margin para ver si ajustaba a la pagina.
-Le puse flexbox tambien.*/
+   }
+
 header{
     position: relative;
-    background-color: #dc5000;
+    
     width: 100%;
     margin: -2% 0 1% -0.5%;
     padding: 0 1% 0 0;
 }
+
+.encabezado{background-color: #dc5000;}
+
 .inicio{
-    /* display: -webkit-flex;
-    display: -ms-flex; */
-    /* display: -webkit-flex; */
-    display: flex;
-    /* flex-wrap: wrap; */
-    }
+     display: flex;
+        }
+
 @media screen and (max-width: 420px) {
     .item1 {width: 100%;}
     .inicio{flex-wrap: wrap;}
@@ -34,10 +32,8 @@ header{
   }
   
 .item1Humedal{
-    /* width: 60%; */
-    text-align: center;
-    /* size-adjust: 80%; */
-  }
+       text-align: center;
+      }
 .item2Humedal{
     /* width: 40%; */
     text-align: left;
@@ -89,9 +85,16 @@ header{
     /* font: Helvetica; */
     font-size: 1.5rem;
     }
+
 h2{
-        color:#ffbd6d
+    color:#ffbd6d  
     }
+
+summary{
+    color:#ffbd6d;
+    font-size: large;
+
+}
 cite h2{
     color:white
 }
@@ -100,17 +103,6 @@ cite h2{
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* .item1Humedal{
-    width: 60%;
-    text-align: center;
-    size-adjust: 80%;
-  }
-.item2Humedal{
-    width: 40%;
-    text-align: left;
-    /* padding: 10px; */
-    /* color: white; */
-/* } */
 
 /*Esto va a ser para las noticias, lo voy a hacer de 0 y luego veo si coincide con algo de lo de arriba.*/
 .carta{
