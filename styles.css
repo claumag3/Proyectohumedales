@@ -68,7 +68,13 @@ header{
     color: #ffbd6d;
     text-align: center ;
 }
-
+#leoMas{
+    display: none;
+}
+#muestroLeoMas{
+    font-size: large;
+    text-align: right;
+}
 
 
 .citas{
