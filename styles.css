@@ -7,7 +7,7 @@ header{
     position: relative;
     
     width: 100%;
-    margin: -2% 0 1% -0.5%;
+    margin: 0 0 1% -0.5%;
     padding: 0 1% 0 0;
 }
 
@@ -33,7 +33,7 @@ header{
   
 .item1Humedal{
        text-align: center;
-      }
+             }
 .item2Humedal{
     /* width: 40%; */
     text-align: left;
@@ -57,22 +57,29 @@ header{
 
 .menuItem {
     display: inline-block;
-    padding-right: 20px;
+    padding-right : 20px;
 }
 .inicio {
     text-align: right;
 }
+.titulo{
+    display: flex;
+    flex-grow: 1 9;
+}
 .tituloPagina{
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     color: #ffbd6d;
     text-align: center ;
+    vertical-align: top;
+    margin: 0px;
 }
 #leoMas{
     display: none;
 }
 #muestroLeoMas{
-    font-size: large;
+    display: block;
+    font-size: 1.5rem;
     text-align: right;
 }
 
