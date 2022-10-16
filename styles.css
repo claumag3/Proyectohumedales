@@ -10,8 +10,10 @@ header{
     margin: 0 0 1% -0.5%;
     padding: 0 1% 0 0;
 }
-
-.encabezado{background-color: #dc5000;}
+footer img{
+    width: 40px; height: 40px;
+}
+#encabezado{background-color: #dc5000;}
 
 .inicio{
      display: flex;
@@ -116,6 +118,39 @@ cite h2{
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* galeria de imagenes */
+.contenedor-galeria{
+    display:grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.item-galeria{
+    width: 80vw;
+    height: 80vh;
+}
+
+.imagenes-galeria{
+    width: 100%;
+    height: 100%;
+}
+/* Galeria de imagenes */
+.slider-container {
+    display: flex;
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+    overflow-x: scroll;
+    
+    scroll-snap-type: x mandatory;
+  }
+  
+  .slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: contain;
+    scroll-snap-align: center;
+  }
 
 /*Esto va a ser para las noticias, lo voy a hacer de 0 y luego veo si coincide con algo de lo de arriba.*/
 .carta{
@@ -123,7 +158,8 @@ cite h2{
 }
 .contenedor-grid{
     display: grid;
-    height: 60vh;
+    /* height: 60vh; 
+    saco lo de arriba porque se encima el pie de pagina en medio del grid*/
     grid-template-columns: 2fr 5fr 2fr;
 }
 .contenedor-grid div{
@@ -148,11 +184,14 @@ cite h2{
     font-family: Helvetica, Arial, sans-serif;
     font: 16px bold;
     color: antiquewhite;
+    /* prueba para altura contenedor */
+    /* funciono! lo dejo asi */
+    height: 60vh;
 }
 
 .imagenes-noticias{
     width: 304px;
-    height: auto;
+    /* height: auto; */
 }
 
 .formulario{
