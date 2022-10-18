@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- #ffbd6d    #dc5000    #7e1a02
+  <head>
+    <!-- #ffbd6d    #dc5000    #7e1a02
         #fcda34    #51591b -->
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ecocidio Humedales Delta</title>
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-      </head>
-<body>
-    <header>
-        <!-- <div> -->
-        <h1>
-          ECOCIDIO EN EL DELTA
-        </h1>
-        <h2 style="text-align: right; font-size: 1.5rem">
-          Concientizando sobre los incendios en los humedales del Delta del Paraná
-          ...
-        </h2>
-        <nav class="menu">
-          <ol>
-            <li class="menuItem">
-              <a href="Humedales.html">Humedales: Que son?</a>
-            </li>
-            <li class="menuItem"><a href="noticias.html">Noticias</a></li>
-            <li class="menuItem">
-              <a href="galeria.html">Galeria de Imagenes</a>
-            </li>
-            <li class="menuItem"><a href="Registro.html">Contacto</a></li>
-          </ol>
-        </nav>
-        <!-- </div> -->
-    </header>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecocidio Humedales Delta</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer src="header.js"></script>
+    <script defer src="footer.js"></script>
+  </head>
+  <body>
+    <header id="encabezado"></header>
+    <h2>Registrate para recibir noticias...</h2>
     <main class="contenedor-grid">
-        <form class="item-principal-grid formulario">
-            <fieldset>
-                <label for="nombre">Ingrese su primer nombre: <input id="nombre" name="nombre" type="text" required /></label>
-                <label for="apellido">Ingrese su apellido: <input id="apellido" name="apellido" type="text" required /></label>
-                <label for="email">Ingrese su mail: <input id="email" name="email" type="email"></label>
-                <label for="contraseña">Crea una contraseña: <input id="contraseña" name="contraseña" type="password" pattern="[a-z0-5]{8,}" required /></label>
-            </fieldset>
-            <fieldset>
-                <label for="terms-and-conditions" name="terms-and-conditions">
-                    <input id="terminos-y-condiciones" type="checkbox" required name="terminos-y-condiciones" class="inline" /> Acepto los <a href="https://www.freecodecamp.org/news/terms-of-service/">Terminos y Condiciones</a>
-                </label>
-                <input type="submit" value="Submit" />
-            </fieldset>
-        </form>
-    </main>
-</body>
+      <form class="item-principal-grid formulario">
+        <fieldset>
+          <label for="nombre"
+            >Ingrese su primer nombre:
+            <input id="nombre" name="nombre" type="text" required
+          /></label>
+          <label for="apellido"
+            >Ingrese su apellido:
+            <input id="apellido" name="apellido" type="text" required
+          /></label>
+          <label for="email"
+            >Ingrese su mail: <input id="email" name="email" type="email" required
+          /></label>
+          <label for="contraseña"
+            >Crea una contraseña:
+            <input
+              id="contraseña"
+              name="contraseña"
+              type="password"
+              pattern="[a-z0-5]{8,}"
+              required
+          /></label>
+        </fieldset>
+        <fieldset>
+          <label for="terms-and-conditions" name="terms-and-conditions">
+            <input
+              id="terminos-y-condiciones"
+              type="checkbox"
+              required
+              name="terminos-y-condiciones"
+              class="inline"
+            />
+            Acepto los
+            <a href="https://www.freecodecamp.org/news/terms-of-service/"
+              >Terminos y Condiciones</a
+            >
+          </label>
+          <input type="submit" value="Submit" />
+         </fieldset>
+      </form>
+     </main>
+
+    <br /><br /><br />
+    <footer id="pieDePagina" style="background-color: #ffbd6d"></footer>
+  </body>
 </html>
