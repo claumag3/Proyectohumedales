@@ -1,5 +1,9 @@
+// var mediaqueryList = window.matchMedia("(max-width: 420px)");
+//    if(mediaqueryList.matches) {
+//      document.getElementById(piePaginaTexto).style=(display:block) ;
+//    }
 document.getElementById("pieDePagina").innerHTML =  ` 
-<span style="font-size: 20px"> Seguinos en nuestras redes: .</span>
+<div id="piePaginaTexto" style="font-size: 20px"> Seguinos en nuestras redes: .</div>
         <img
             src="imagenes/twitter1.ico"
             title="twitter"
@@ -12,6 +16,5 @@ document.getElementById("pieDePagina").innerHTML =  `
             src="imagenes/instagram.ico"
             title="instagram"
           />
-       </footer>
-
-    `
+   `
+   

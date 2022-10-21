@@ -10,7 +10,9 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script defer src="header.js"></script>
     <script defer src="footer.js"></script>
+    <script defer src="validaEnvio.js"></script>
   </head>
+
   <body>
     <header id="encabezado"></header>
     <h2>Registrate para recibir noticias...</h2>
@@ -23,10 +25,11 @@
           /></label>
           <label for="apellido"
             >Ingrese su apellido:
-            <input id="apellido" name="apellido" type="text" required
+            <input id="apellido" name="apellido" type="text"
           /></label>
           <label for="email"
-            >Ingrese su mail: <input id="email" name="email" type="email" required
+            >Ingrese su mail:
+            <input id="email" name="email" type="email" required
           /></label>
           <label for="contraseña"
             >Crea una contraseña:
@@ -49,13 +52,23 @@
             />
             Acepto los
             <a href="https://www.freecodecamp.org/news/terms-of-service/"
-              >Terminos y Condiciones</a
-            >
+              >Terminos y Condiciones
+            </a>
           </label>
-          <input type="submit" value="Submit" />
-         </fieldset>
+          <input style="width: 100px" type="reset" value="Borrar" />
+          <span style="width: 300px; visibility: hidden"
+            >separa los 2 botones al final del formulario</span
+          >
+          <input
+            id="envio"
+            ;
+            style="width: 100px"
+            type="submit"
+            value="Enviar"
+          />
+        </fieldset>
       </form>
-     </main>
+    </main>
 
     <br /><br /><br />
     <footer id="pieDePagina" style="background-color: #ffbd6d"></footer>
