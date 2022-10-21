@@ -101,6 +101,26 @@ footer img{
     /* font: Helvetica; */
     font-size: 1.5rem;
     }
+.animado{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: -40%;
+    height: 300%;
+    color:#ffbd6d;
+    opacity: 0.5;
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+    color: darkorange;
+    opacity: 1;
+  }
+}
 
 h2{
     color:#ffbd6d  
