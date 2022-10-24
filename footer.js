@@ -1,5 +1,6 @@
-document.getElementById("pieDePagina").innerHTML =  ` 
-<span style="font-size: 20px"> Seguinos en nuestras redes: .</span>
+
+document.getElementById("pieDePagina").innerHTML = ` 
+<div id="piePaginaTexto" style="font-size: 20px"> Seguinos en nuestras redes: .</div>
         <img
             src="imagenes/twitter1.ico"
             title="twitter"
@@ -12,6 +13,4 @@ document.getElementById("pieDePagina").innerHTML =  `
             src="imagenes/instagram.ico"
             title="instagram"
           />
-       </footer>
-
-    `
+   `

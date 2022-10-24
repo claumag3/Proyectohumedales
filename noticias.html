@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- #ffbd6d    #dc5000    #7e1a02   #fcda34    #51591b -->
+    <!-- color #ffbd6d    #dc5000    #7e1a02   #fcda34    #51591b -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,16 +9,46 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script defer src="header.js"></script>
     <script defer src="footer.js"></script>
+    <script src="clima.js"></script>
   </head>
+
   <body>
     <header id="encabezado"></header>
 
+    <div style="display: flex; align-items: flex-start;">
+      <div style="width: 50%; border: #ffbd6d solid 1px;">
+        <span class="citas"
+          >La temperatura maxima para el dia de hoy será de
+        </span>
+        <span
+          id="maxima"
+          style="
+            font-size: 1.6rem;
+            font-weight: bold;
+            background-color: aliceblue;
+            color: #51591b;
+          "
+        >
+        </span>
+        <span class="citas"> grados !</span>
+      </div>
+      <div style="width: 50%; justify-content: right;">
+         <span style="visibility: hidden">xxxxxxxxxxxxxxxxxx</span>
+         <img
+          width="70%"
+          height="70%"
+          style="text-align: end"
+          src="http://www.7timer.info/bin/civillight.php?lon=-59.6631&lat=-33.6758&ac=0&lang=en&unit=metric&output=internal&tzshift=0"
+        />
+      </div>
+    </div>
+    <br />
+
+    <section class="item-superior-grid">
+      <h2 style="display: inline">Ultimas Noticias ...</h2>
+    </section>
+
     <div class="contenedor-grid">
-      <!-- <section style="border: solid 3px purple" class="item-superior-grid"></section> -->
-      <section class="item-superior-grid">
-        <h2>Ultimas Noticias ...</h2>
-      </section>
-      <!--https://www.lanacion.com.ar/sociedad/incendios-en-corrientes-en-enero-y-febrero-se-quemo-seis-veces-mas-superficie-que-en-los-cinco-nid25052022/ Me voy a requeterobar ese mapa-->
       <main class="item-principal-grid contenedor-grid">
         <div class="item-cartas-grid">
           <a
@@ -91,6 +121,9 @@
       </main>
     </div>
     <br /><br />
+    <p></p>
+    <p></p><p></p>
+  <div>
     <a href="firmas.html">
       <span style="font-size: 2rem; color: #ffbd6d"
         >Algunos sitios de interes ...</span
@@ -102,6 +135,7 @@
           alt="ATENCION!"
       /></span>
     </a>
+  </div>
     <br /><br /><br />
     <footer id="pieDePagina" style="background-color: #ffbd6d"></footer>
   </body>
