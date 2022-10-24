@@ -12,6 +12,11 @@ header{
 footer img{
     width: 40px; height: 40px;
 }
+#mensaje{
+  color: rgb(4, 4, 4);
+  font-weight: bold;
+  font-size: x-large;
+}
 #encabezado{background-color: #dc5000;}
 
 .inicio{
@@ -23,6 +28,7 @@ footer img{
     .inicio{flex-wrap: wrap;}
     .item1Humedal{width: 100%;}
     #piePaginaTexto{display: block;}
+
   }
  
 @media screen and (min-width: 421px) {
